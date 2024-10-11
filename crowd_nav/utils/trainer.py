@@ -7,6 +7,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 
 
+# Model Predictive Reinforcement Learning
 class MPRLTrainer(object):
     def __init__(self, value_estimator, state_predictor, memory, device, policy, writer, batch_size, optimizer_str, human_num,
                  reduce_sp_update_frequency, freeze_state_predictor, detach_state_predictor, share_graph_model):
